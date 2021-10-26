@@ -20,7 +20,7 @@
   export default {
       methods: {
           onSubmit() {
-              console.log('Label value: ', this.label);
+              this.$emit('todo-added', this.label);
           }
       },
       data() {
