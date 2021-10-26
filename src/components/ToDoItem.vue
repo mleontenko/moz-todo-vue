@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="checkbox" id="todo-item" checked="false" />
+        <input type="checkbox" id="todo-item" v-bind:checked="isDone" />
         <label for="todo-item">{{label}}</label>
     </div>
 </template>
