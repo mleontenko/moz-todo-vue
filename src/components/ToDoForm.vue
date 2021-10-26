@@ -8,6 +8,7 @@
         id="new-todo-input"
         name="new-todo"
         autocomplete="off"
+        v-model="label"
         />
         <button type="submit">
         Add
@@ -19,8 +20,13 @@
   export default {
       methods: {
           onSubmit() {
-              console.log('form submitted')
+              console.log('Label value: ', this.label);
           }
+      },
+      data() {
+        return {
+            label: ""    
+        };
       }
   };
 </script>
